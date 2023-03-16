@@ -8,11 +8,11 @@ miFuncion();
 
 //Expresión
 
-var miFuncion2 = function(a,b){
+var miFuncion3 = function(a,b){
     return a + b;
 }
 
-miFuncion2();
+miFuncion3();
 
 
 
