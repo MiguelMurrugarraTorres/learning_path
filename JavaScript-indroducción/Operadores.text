@@ -1,0 +1,54 @@
+Operadores de Asignación
+Los operadores de asignación se usan para asignar valores a variables. El operador más común es el signo igual (=), pero también existen otros que combinan la asignación con una operación aritmética.
+
+Ejemplos:
+
+javascript
+Copy code
+let x = 10;   // asigna 10 a la variable x
+let y = 5;
+
+y += x;       // equivale a y = y + x
+console.log(y);   // muestra 15 en la consola
+Operadores Aritméticos
+Los operadores aritméticos se usan para realizar operaciones matemáticas entre valores. Los operadores más comunes son los siguientes:
+
+Suma (+): se usa para sumar dos valores.
+Resta (-): se usa para restar un valor de otro.
+Multiplicación (*): se usa para multiplicar dos valores.
+División (/): se usa para dividir un valor por otro.
+Módulo (%): se usa para obtener el resto de una división.
+Ejemplos:
+
+css
+Copy code
+let a = 5;
+let b = 2;
+
+console.log(a + b);   // muestra 7 en la consola
+console.log(a - b);   // muestra 3 en la consola
+console.log(a * b);   // muestra 10 en la consola
+console.log(a / b);   // muestra 2.5 en la consola
+console.log(a % b);   // muestra 1 en la consola
+Operadores de Comparación
+Los operadores de comparación se usan para comparar dos valores y devolver un valor booleano (verdadero o falso). Los operadores más comunes son los siguientes:
+
+Igual (==): devuelve verdadero si dos valores son iguales, sin importar su tipo.
+Estrictamente igual (===): devuelve verdadero si dos valores son iguales y del mismo tipo.
+Distinto (!=): devuelve verdadero si dos valores no son iguales, sin importar su tipo.
+Estrictamente distinto (!==): devuelve verdadero si dos valores no son iguales o no son del mismo tipo.
+Mayor que (>), Mayor o igual que (>=), Menor que (<), Menor o igual que (<=): se usan para comparar valores numéricos.
+Ejemplos:
+
+javascript
+Copy code
+let x = 5;
+let y = "5";
+
+console.log(x == y);    // muestra true en la consola
+console.log(x === y);   // muestra false en la consola
+console.log(x != y);    // muestra false en la consola
+console.log(x !== y);   // muestra true en la consola
+console.log(x > 3);     // muestra true en la consola
+console.log(x <= 4);    // muestra false en la consola
+Espero que esto te haya sido útil. Si tienes alguna pregunta adicional, no dudes en preguntar.

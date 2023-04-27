@@ -13,4 +13,4 @@ condition ? true:false
 
 var numero = 1;
 
-var resultado = numero === 1 ? "si soy un numero" : "WEBON escribe un numero";
+var resultado = numero === 1 ? "si soy un numero" : " WEBON escribe un numero";
