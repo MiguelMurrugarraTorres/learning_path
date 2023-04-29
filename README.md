@@ -1,4 +1,5 @@
-# learning_path
+# "Desarrollador DevOps en la nube con experiencia en Git, Docker, Kubernetes, CI/CD, AWS, Azure, Ansible y Terraform, enfocado en eficiencia y escalabilidad del desarrollo de software."
+
 Soy un apasionado por la tecnología y la programación. Mi ruta DevOps en la nube incluye Git, Docker, Kubernetes, CI/CD, AWS, Azure, Ansible, y Terraform. Busco aplicar mi experiencia para lograr eficiencia y escalabilidad en los procesos de desarrollo de software
 
 // En JavaScript, podemos crear variables usando las palabras clave var, let y const.
