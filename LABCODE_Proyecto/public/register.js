@@ -1,30 +1,40 @@
-import axios from 'axios';
+document.getElementById('registerForm').addEventListener('submit', registerUser);
 
-document.getElementById('registerForm').addEventListener('submit', function(event) {
+function registerUser(event) {
   event.preventDefault();
 
-  var username = document.getElementById('username').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-  if (!username || !email || !password) {
-    alert('Por favor, completa todos los campos');
-    return;
-  }
-
-  var formData = {
+  const data = {
     username: username,
     email: email,
     password: password
   };
 
-  axios.post('/register', formData)
-    .then(function(response) {
-      alert('Registro exitoso');
-      window.location.href = '/dashboard';
-    })
-    .catch(function(error) {
-      console.error(error);
-      alert('Ocurrió un error durante el registro');
-    });
-});
+  fetch('/api/register', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(result => {
+    if (result.success) {
+      showMessage('Registro exitoso. ¡Bienvenido!');
+    } else {
+      showMessage('El registro ha fallado. Inténtalo de nuevo.');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    showMessage('Ocurrió un error en el servidor. Inténtalo de nuevo más tarde.');
+  });
+}
+
+function showMessage(message) {
+  const messageDiv = document.getElementById('message');
+  messageDiv.textContent = message;
+}

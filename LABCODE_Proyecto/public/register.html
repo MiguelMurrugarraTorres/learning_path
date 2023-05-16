@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registro de usuario</title>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
     }
 
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    form {
+    .container {
       max-width: 400px;
-      margin: 20px auto;
+      margin: 0 auto;
       padding: 20px;
       background-color: #fff;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
     }
 
     label {
       display: block;
-      margin-bottom: 10px;
-      color: #555;
+      margin-bottom: 5px;
+      font-weight: bold;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="password"] {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
+      padding: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      box-sizing: border-box;
     }
 
     button[type="submit"] {
-      display: block;
       width: 100%;
       padding: 10px;
       background-color: #4caf50;
@@ -51,22 +53,38 @@
       cursor: pointer;
     }
 
-    button[type="submit"]:hover {
-      background-color: #45a049;
+    .message {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #f2dede;
+      color: #a94442;
+      border: 1px solid #ebccd1;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h2>Registro de usuario</h2>
-  <form id="registerForm">
-    <label for="username">Nombre de usuario:</label>
-    <input type="text" id="username" required><br><br>
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" required><br><br>
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" required><br><br>
-    <button type="submit">Registrarse</button>
-  </form>
+  <div class="container">
+    <h1>Registro de Usuario</h1>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Registrarse</button>
+      </div>
+    </form>
+    <div id="message" class="message"></div>
+  </div>
 
   <script src="register.js"></script>
 </body>
