@@ -7,15 +7,21 @@ Creación de la estructura de archivos:
 
 Creamos una estructura de carpetas con una carpeta public para los archivos HTML, JavaScript y CSS, y una carpeta server para los archivos de servidor.
 
-
-`- proyecto/
+<pre>
+```python
+  - proyecto/
   - public/
     - register.html
     - register.js
     - styles.css
   - server/
     - server.js
-  - package.json`
+  - package.json
+  
+  ```
+</pre>
+  
+  </pre>
 
 Implementación del registro de usuarios:
 
