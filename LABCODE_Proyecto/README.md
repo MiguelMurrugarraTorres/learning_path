@@ -72,4 +72,7 @@ Las siguientes tecnologías se utilizaron para implementar esta funcionalidad:
 - HTML: Lenguaje de marcado utilizado para crear la estructura y el contenido del formulario de registro.
 - CSS: Lenguaje utilizado para dar estilo y diseño al formulario HTML.
 - JavaScript: Lenguaje utilizado para capturar los datos del formulario, enviar solicitudes al servidor y mostrar mensajes de éxito o error.
-- Node.js: Entorno de tiempo
+- Node.js: Entorno de tiempo  
+
+![image](https://github.com/MiguelMurrugarraTorres/learning_path/assets/20019777/2fde1cdc-978b-4528-90fa-55b9b03a5065)
+
