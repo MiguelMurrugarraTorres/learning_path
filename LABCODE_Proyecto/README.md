@@ -19,6 +19,8 @@ Configuración del servidor:
 
 Utilizamos Express.js para crear un servidor web en Node.js.
 Configuramos las rutas del servidor para que al acceder a la ruta raíz (/), se muestre el formulario de registro (register.html).
+
+
 Tecnologías utilizadas en esta tarea:
 
 HTML: Lenguaje de marcado utilizado para crear la estructura y el contenido del formulario de registro.
