@@ -24,11 +24,11 @@ Aquí tienes una lista de los comandos de npm que se utilizaron y el orden en el
 
 `npm init` :  Se utilizó para inicializar el proyecto y crear el archivo package.json que registra la configuración del proyecto y las dependencias.
 
-npm install express: Se utilizó para instalar el paquete Express.js, un marco de aplicación web de Node.js.
+`npm install express` : Se utilizó para instalar el paquete Express.js, un marco de aplicación web de Node.js.
 
-npm install mysql: Se utilizó para instalar el paquete mysql, que proporciona una interfaz para conectarse y trabajar con la base de datos MySQL.
+`npm install mysql` : Se utilizó para instalar el paquete mysql, que proporciona una interfaz para conectarse y trabajar con la base de datos MySQL.
 
-npm install body-parser: Se utilizó para instalar el paquete body-parser, que permite analizar los datos enviados en el cuerpo de las solicitudes HTTP.
+`npm install body-parser` : Se utilizó para instalar el paquete body-parser, que permite analizar los datos enviados en el cuerpo de las solicitudes HTTP.
 
 Estos comandos se ejecutaron en el directorio raíz del proyecto utilizando la terminal. Asegúrate de tener Node.js instalado antes de ejecutar estos comandos.
 
