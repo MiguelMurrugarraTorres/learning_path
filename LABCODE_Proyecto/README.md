@@ -1,11 +1,13 @@
-Configuración del entorno:
+# Configuración del entorno
 
+Antes de comenzar, asegúrate de tener Node.js y MySQL instalados en tu máquina para poder ejecutar y almacenar datos en la aplicación.
 
-Instalamos Node.js y MySQL para poder ejecutar y almacenar datos en nuestra aplicación.
-Creamos una carpeta de proyecto donde organizamos nuestros archivos.
-Creación de la estructura de archivos:
+## Creación de la estructura de archivos
 
-Creamos una estructura de carpetas con una carpeta public para los archivos HTML, JavaScript y CSS, y una carpeta server para los archivos de servidor.
+1. Crea una carpeta de proyecto donde organices tus archivos.
+
+2. Estructura de carpetas:
+
 
 <pre>
   - proyecto/
