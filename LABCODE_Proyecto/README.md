@@ -1,10 +1,22 @@
 Configuración del entorno:
 
+
 Instalamos Node.js y MySQL para poder ejecutar y almacenar datos en nuestra aplicación.
 Creamos una carpeta de proyecto donde organizamos nuestros archivos.
 Creación de la estructura de archivos:
 
 Creamos una estructura de carpetas con una carpeta public para los archivos HTML, JavaScript y CSS, y una carpeta server para los archivos de servidor.
+
+
+`- proyecto/
+  - public/
+    - register.html
+    - register.js
+    - styles.css
+  - server/
+    - server.js
+  - package.json`
+
 Implementación del registro de usuarios:
 
 Creamos un formulario HTML en register.html que permite a los usuarios registrarse proporcionando un nombre de usuario, correo electrónico y contraseña.
@@ -19,6 +31,7 @@ Configuración del servidor:
 
 Utilizamos Express.js para crear un servidor web en Node.js.
 Configuramos las rutas del servidor para que al acceder a la ruta raíz (/), se muestre el formulario de registro (register.html).
+![image](https://github.com/MiguelMurrugarraTorres/learning_path/assets/20019777/b015182d-e986-4f60-b2ee-7faf7eba8d78)
 
 
 Tecnologías utilizadas en esta tarea:
