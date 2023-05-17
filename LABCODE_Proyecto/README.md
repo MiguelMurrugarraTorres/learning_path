@@ -19,6 +19,22 @@ Creamos una estructura de carpetas con una carpeta public para los archivos HTML
 </pre>
   
   </pre>
+  
+Aquí tienes una lista de los comandos de npm que se utilizaron y el orden en el que se instalaron las dependencias:  
+
+`npm init` :  Se utilizó para inicializar el proyecto y crear el archivo package.json que registra la configuración del proyecto y las dependencias.
+
+npm install express: Se utilizó para instalar el paquete Express.js, un marco de aplicación web de Node.js.
+
+npm install mysql: Se utilizó para instalar el paquete mysql, que proporciona una interfaz para conectarse y trabajar con la base de datos MySQL.
+
+npm install body-parser: Se utilizó para instalar el paquete body-parser, que permite analizar los datos enviados en el cuerpo de las solicitudes HTTP.
+
+Estos comandos se ejecutaron en el directorio raíz del proyecto utilizando la terminal. Asegúrate de tener Node.js instalado antes de ejecutar estos comandos.
+
+Recuerda que, además de estas dependencias, también se utilizó el módulo path incorporado en Node.js para manejar rutas de archivos y la carpeta public se utiliza para almacenar los archivos estáticos (HTML, CSS, JavaScript) que se sirven al cliente.
+  
+  
 
 Implementación del registro de usuarios:
 
@@ -34,6 +50,9 @@ Configuración del servidor:
 
 Utilizamos Express.js para crear un servidor web en Node.js.
 Configuramos las rutas del servidor para que al acceder a la ruta raíz (/), se muestre el formulario de registro (register.html).
+
+
+
 ![image](https://github.com/MiguelMurrugarraTorres/learning_path/assets/20019777/b015182d-e986-4f60-b2ee-7faf7eba8d78)
 
 
