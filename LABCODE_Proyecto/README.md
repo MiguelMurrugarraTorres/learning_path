@@ -36,10 +36,10 @@ Configuramos las rutas del servidor para que al acceder a la ruta raíz (/), se 
 
 Tecnologías utilizadas en esta tarea:
 
-HTML: Lenguaje de marcado utilizado para crear la estructura y el contenido del formulario de registro.
-CSS: Lenguaje utilizado para dar estilo y diseño al formulario HTML.
-JavaScript: Lenguaje utilizado para capturar los datos del formulario, enviar solicitudes al servidor y mostrar mensajes de éxito o error.
-Node.js: Entorno de tiempo de ejecución de JavaScript utilizado para ejecutar el servidor y comunicarse con la base de datos.
-MySQL: Sistema de gestión de bases de datos relacional utilizado para almacenar los datos de los usuarios registrados.
-Express.js: Marco de aplicación web de Node.js utilizado para crear y configurar el servidor web.
-En resumen, hemos creado una aplicación web simple que permite a los usuarios registrarse a través de un formulario HTML. Los datos del formulario se envían al servidor Node.js, que los valida y los inserta en la base de datos MySQL. Hemos utilizado HTML, CSS, JavaScript, Node.js, MySQL y Express.js para implementar esta funcionalidad.
+HTML: Lenguaje de marcado utilizado para crear la estructura y el contenido del formulario de registro.  
+CSS: Lenguaje utilizado para dar estilo y diseño al formulario HTML.  
+JavaScript: Lenguaje utilizado para capturar los datos del formulario, enviar solicitudes al servidor y mostrar mensajes de éxito o error.  
+Node.js: Entorno de tiempo de ejecución de JavaScript utilizado para ejecutar el servidor y comunicarse con la base de datos.  
+MySQL: Sistema de gestión de bases de datos relacional utilizado para almacenar los datos de los usuarios registrados.  
+Express.js: Marco de aplicación web de Node.js utilizado para crear y configurar el servidor web.  
+En resumen, hemos creado una aplicación web simple que permite a los usuarios registrarse a través de un formulario HTML. Los datos del formulario se envían al servidor Node.js, que los valida y los inserta en la base de datos MySQL. Hemos utilizado HTML, CSS, JavaScript, Node.js, MySQL y Express.js para implementar esta funcionalidad.  
