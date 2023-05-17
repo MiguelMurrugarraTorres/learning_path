@@ -8,7 +8,6 @@ Creación de la estructura de archivos:
 Creamos una estructura de carpetas con una carpeta public para los archivos HTML, JavaScript y CSS, y una carpeta server para los archivos de servidor.
 
 <pre>
-```python
   - proyecto/
   - public/
     - register.html
@@ -17,8 +16,6 @@ Creamos una estructura de carpetas con una carpeta public para los archivos HTML
   - server/
     - server.js
   - package.json
-  
-  ```
 </pre>
   
   </pre>
