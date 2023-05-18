@@ -37,17 +37,16 @@ Estos comandos se ejecutan en el directorio raíz del proyecto utilizando la ter
 ## Para instalar Node.js en tu sistema, puedes seguir los siguientes pasos:
 
 1. Visita el sitio web oficial de Node.js: https://nodejs.org/
-
 2. En la página de inicio, verás dos opciones de descarga: LTS (Long-Term Support) y Current.
 
 Si deseas la versión LTS, recomendada para la mayoría de los usuarios, haz clic en el botón de descarga correspondiente a tu sistema operativo.  
 Si prefieres la versión Current, que contiene las últimas características y actualizaciones, selecciona la opción Current y luego haz clic en el botón de descarga para tu sistema operativo.  
 
-3.Una vez que se complete la descarga, ejecuta el instalador y sigue las instrucciones del asistente de instalación.  
-
+3. Una vez que se complete la descarga, ejecuta el instalador y sigue las instrucciones del asistente de instalación.
 4. Después de la instalación, puedes verificar si Node.js se instaló correctamente abriendo una nueva ventana de terminal (o CMD en Windows) y 
 
-ejecutando el siguiente comando:
+ejecutando el siguiente comando: 
+
 
 <pre>
  node -v
