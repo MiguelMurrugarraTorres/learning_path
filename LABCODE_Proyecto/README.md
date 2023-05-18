@@ -45,7 +45,9 @@ Si prefieres la versión Current, que contiene las últimas características y a
 
 3.Una vez que se complete la descarga, ejecuta el instalador y sigue las instrucciones del asistente de instalación.  
 
-4. Después de la instalación, puedes verificar si Node.js se instaló correctamente abriendo una nueva ventana de terminal (o CMD en Windows) y ejecutando el siguiente comando:
+4. Después de la instalación, puedes verificar si Node.js se instaló correctamente abriendo una nueva ventana de terminal (o CMD en Windows) y 
+
+ejecutando el siguiente comando:
 
 <pre>
  node -v
