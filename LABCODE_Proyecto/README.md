@@ -37,6 +37,18 @@ A continuación, se muestra una lista de los comandos de npm que se utilizaron y
 
 Estos comandos se ejecutan en el directorio raíz del proyecto utilizando la terminal.
 
+## Para instalar Node.js en tu sistema, puedes seguir los siguientes pasos:
+
+Visita el sitio web oficial de Node.js: https://nodejs.org/
+
+En la página de inicio, verás dos opciones de descarga: LTS (Long-Term Support) y Current.
+
+Si deseas la versión LTS, recomendada para la mayoría de los usuarios, haz clic en el botón de descarga correspondiente a tu sistema operativo.
+Si prefieres la versión Current, que contiene las últimas características y actualizaciones, selecciona la opción Current y luego haz clic en el botón de descarga para tu sistema operativo.
+Una vez que se complete la descarga, ejecuta el instalador y sigue las instrucciones del asistente de instalación.
+
+Después de la instalación, puedes verificar si Node.js se instaló correctamente abriendo una nueva ventana de terminal (o CMD en Windows) y ejecutando el siguiente comando:
+
 ## Implementación del registro de usuarios
 
 En esta sección, se describe cómo se implementó el registro de usuarios en la aplicación:
