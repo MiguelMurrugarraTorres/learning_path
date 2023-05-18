@@ -8,8 +8,7 @@ Antes de comenzar, asegúrate de tener Node.js y MySQL instalados en tu máquina
 
 2. Estructura de carpetas:
 
-
-
+<pre
   - proyecto/
   - public/
     - register.html
