@@ -9,19 +9,16 @@ Antes de comenzar, asegúrate de tener Node.js y MySQL instalados en tu máquina
 2. Estructura de carpetas:
 
 
-<pre>
+
   - proyecto/
   - public/
     - register.html
     - register.js
     - styles.css
-  - server/
+  - server/`
     - server.js
   - package.json
-</pre>
-  
-  </pre>
-  
+
 
 ## Comandos de npm utilizados
 
