@@ -1,10 +1,13 @@
+// Importar los módulos necesarios
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
+// Configurar el uso de bodyParser para el análisis de las solicitudes
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 
 // Configuración de la conexión a la base de datos MySQL
 const db = mysql.createConnection({
@@ -34,9 +37,8 @@ app.post('/api/register', (req, res) => {
       console.error('Error al verificar el usuario: ' + err.stack);
       return res.status(500).json({ success: false, message: 'Error interno del servidor' });
     }
-
     if (results.length > 0) {
-      return res.status(409).json({ success: false, message: 'El nombre de usuario ya está registrado' });
+      return res.status(409).json({ message: 'El nombre de usuario ya está registrado' });
     }
 
     // Insertar nuevo usuario en la base de datos
