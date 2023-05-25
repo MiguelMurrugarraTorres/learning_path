@@ -16,22 +16,22 @@ function registerUser(event) {
   fetch('/api/register', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+        'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
-  })
-  .then(response => response.json())
-  .then(result => {
-    if (result.success) {
-      showMessage('Registro exitoso. ¡Bienvenido!');
-    } else {
-      showMessage('El registro ha fallado. Inténtalo de nuevo.');
-    }
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    showMessage('Ocurrió un error en el servidor. Inténtalo de nuevo más tarde.');
-  });
+})
+    .then(response => response.json())
+    .then(result => {
+        if (result.message === 'El nombre de usuario ya está registrado') {
+          showMessage('El nombre de usuario ya está registrado');
+        } else {
+          showMessage('Registro exitoso. ¡Bienvenido!');
+        }
+      })
+    .catch(error => {
+        console.error('Error', error);
+        showMessage('Ocurrió un error en el servidor. Inténtalo de nuevo más tarde.');
+    });
 }
 
 function showMessage(message) {
