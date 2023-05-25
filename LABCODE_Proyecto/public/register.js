@@ -22,11 +22,11 @@ function registerUser(event) {
 })
     .then(response => response.json())
     .then(result => {
-        if (result.message === 'El nombre de usuario ya está registrado') {
-          showMessage('El nombre de usuario ya está registrado');
-        } else {
-          showMessage('Registro exitoso. ¡Bienvenido!');
-        }
+      if (result.message === 'El nombre de usuario ya está registrado') {
+        showMessage('El nombre de usuario ya está registrado', 'error');
+      } else {
+        showMessage('Registro exitoso. ¡Bienvenido!', 'success');
+      }
       })
     .catch(error => {
         console.error('Error', error);
@@ -34,7 +34,17 @@ function registerUser(event) {
     });
 }
 
-function showMessage(message) {
+function showMessage(message, type) {
   const messageDiv = document.getElementById('message');
   messageDiv.textContent = message;
+
+  // Remover todas las clases de color previas
+  messageDiv.classList.remove('error', 'success');
+
+  // Aplicar la clase correspondiente según el tipo de mensaje
+  if (type === 'error') {
+    messageDiv.classList.add('error');
+  } else if (type === 'success') {
+    messageDiv.classList.add('success');
+  }
 }
