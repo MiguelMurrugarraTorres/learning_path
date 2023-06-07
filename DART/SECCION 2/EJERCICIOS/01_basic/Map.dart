@@ -1,10 +1,14 @@
 void main() {
-  final nombre = 'miguel';
-  saludar(nombre);
+  final nombre = 'Miguel Murrugarra';
+  final mensaje = " aprenderas dart y flutter =) ";
+  //saludar(nombre);
+  saludar2(nombre: nombre, mensaje: mensaje);
 }
 
-void saludar(String x) {
-  Map persona = {'Nombre': 'Fernando', 'edad ': 35, 'Soltero': true};
-  persona.addAll({4: 'cusqueñito'});
-  print(persona);
+void saludar(String nombre, [String mensaje = 'HI']) {
+  print('$mensaje $nombre' + ' Bienvenido al curso de dart');
+}
+
+void saludar2({required String nombre, required mensaje}) {
+  print(' $mensaje, $nombre ');
 }
