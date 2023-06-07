@@ -38,6 +38,7 @@ app.post('/api/register', (req, res) => {
       return res.status(500).json({ success: false, message: 'Error interno del servidor' });
     }
     if (results.length > 0) {
+      console.log('El nombre de usuario ya está registrado');
       return res.status(409).json({ message: 'El nombre de usuario ya está registrado' });
     }
 
@@ -48,7 +49,8 @@ app.post('/api/register', (req, res) => {
         console.error('Error al insertar el usuario: ' + err.stack);
         return res.status(500).json({ success: false, message: 'Error interno del servidor' });
       }
-
+      
+      console.log('Usuario registrado exitosamente');
       return res.status(201).json({ success: true, message: 'Usuario registrado exitosamente' });
     });
   });
