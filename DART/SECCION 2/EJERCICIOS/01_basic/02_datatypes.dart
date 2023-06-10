@@ -5,10 +5,9 @@ main() {
   double _b = 20.0;
 
   double sum = _a + _b;
-
   //print(sum);
 
-  //==== Strings
+//======= Strings
 
   String nombre = 'michael';
   String nombre2 = 'miguel';
@@ -28,7 +27,7 @@ main() {
 
   //print(isNotActive);
 
-  //===Lists
+  //===Lists  []
 
   //List<String> villanosDeprecated = new List();
 
@@ -39,8 +38,41 @@ main() {
   ]; // siempre base 0
 
   villanos[0] = 'El ganador del clausura';
-  villanos[1] = 'El campeón Peruano 2022';
-  villanos[2] = 'El ganador del apertura';
+  villanos[1] = 'El campeón Peruano 2023';
+  villanos[2] = 'Sporting cristal';
 
-  print(villanos);
+  villanos.add('Campeon de la libertadores');
+  villanos.add('Campeon de la libertadores');
+  villanos.add('Campeon de la libertadores');
+
+  // print(villanos);
+
+  //==== convertir de listado a sets
+
+  var villanosSet = villanos.toSet();
+  //print(villanosSet);
+
+  // ======= Sets  {}
+
+  Set<String> villanos2 = {'Alianza lima', 'Sportin Cristal', 'Melgar FC'};
+
+  villanos2.add('UTC de cajamarca');
+  villanos2.add('UTC de cajamarca');
+  villanos2.add('UTC de cajamarca');
+
+// ========= Maps  (diccionarios / Objetos literares)
+
+  Map<String, dynamic> iroman = {
+    'nombre': 'Tony Stark',
+    'Poder': 'Inteligencia y dinero ',
+    'nivel': 9000
+  };
+
+  //print(iroman['nombre']);
+
+  Map<String, dynamic> capitanAmerica = new Map();
+
+  capitanAmerica
+      .addAll({'Nombre': 'Steve', 'poder': 'superPoder', 'nivel': 6000});
+  print(capitanAmerica);
 }
