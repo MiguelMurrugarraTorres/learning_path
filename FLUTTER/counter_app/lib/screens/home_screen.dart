@@ -23,6 +23,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton:
           FloatingActionButton(child: const Icon(Icons.add), onPressed: () {}),
     );
