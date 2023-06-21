@@ -25,7 +25,8 @@ class Listview1Screen extends StatelessWidget {
                       leading: const Icon(Icons.ad_units_sharp),
                       trailing: const Icon(Icons.arrow_forward_ios_outlined),
                     ))
-                .toList()
+                .toList(),
+            Divider(),
           ],
         ));
   }
