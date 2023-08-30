@@ -27,7 +27,10 @@ class Listview2Screen extends StatelessWidget {
             itemCount: options.length,
             itemBuilder: (context, index) => ListTile(
                   title: Text(options[index]),
-                  trailing: const Icon(Icons.arrow_forward_ios_outlined, color: Colors.indigo,),
+                  trailing: const Icon(
+                    Icons.arrow_forward_ios_outlined,
+                    color: Colors.indigo,
+                  ),
                   onTap: () {
                     final game = options[index];
                     print(game);
