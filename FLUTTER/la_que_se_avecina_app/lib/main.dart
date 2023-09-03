@@ -32,6 +32,7 @@ class SeasonsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Temporadas'),
       ),
+      // drawer: LaQueSeAvecinaDrawer(), // Agrega el Drawer al Scaffold
       body: ListView.builder(
         itemCount: seasons.length,
         itemBuilder: (context, index) {
