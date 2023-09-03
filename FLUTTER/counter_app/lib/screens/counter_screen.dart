@@ -10,6 +10,22 @@ class CounterScreen extends StatefulWidget {
 class _CounterScreenState extends State<CounterScreen> {
   //variable, propiedad
   int counter = 0;
+
+  void increase() {
+    counter++;
+    setState(() {});
+  }
+
+  void decrease() {
+    counter--;
+    setState(() {});
+  }
+
+  void reset() {
+    counter = 0;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     const fontSize30 = TextStyle(fontSize: 30);
@@ -33,20 +49,40 @@ class _CounterScreenState extends State<CounterScreen> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          FloatingActionButton(
-              child: const Icon(Icons.exposure_minus_1_outlined),
-              onPressed: () => setState(() => counter--)),
-          FloatingActionButton(
-              child: const Icon(Icons.restart_alt),
-              onPressed: () => setState(() => counter = 0)),
-          FloatingActionButton(
-              child: const Icon(Icons.add),
-              onPressed: () => setState(() => counter++))
-        ],
+      floatingActionButton: CustomFloatingActions(
+        increaseFn: increase,
+        decreaseFn: decrease,
+        resetFn: reset,
       ),
+    );
+  }
+}
+
+class CustomFloatingActions extends StatelessWidget {
+  final Function increaseFn;
+  final Function decreaseFn;
+  final Function resetFn;
+
+  const CustomFloatingActions({
+    super.key,
+    required this.increaseFn,
+    required this.decreaseFn,
+    required this.resetFn,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        FloatingActionButton(
+            child: const Icon(Icons.exposure_minus_1_outlined),
+            onPressed: () => decreaseFn()),
+        FloatingActionButton(
+            child: const Icon(Icons.restart_alt), onPressed: () => resetFn()),
+        FloatingActionButton(
+            child: const Icon(Icons.add), onPressed: () => increaseFn())
+      ],
     );
   }
 }

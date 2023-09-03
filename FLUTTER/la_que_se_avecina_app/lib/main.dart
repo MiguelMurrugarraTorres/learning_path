@@ -4,10 +4,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
-  runApp(LaQueSeAvecinaApp());
+  runApp(const LaQueSeAvecinaApp());
 }
 
 class LaQueSeAvecinaApp extends StatelessWidget {
+  const LaQueSeAvecinaApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +32,7 @@ class SeasonsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Temporadas'),
+        title: const Text('Temporadas'),
       ),
       // drawer: LaQueSeAvecinaDrawer(), // Agrega el Drawer al Scaffold
       body: ListView.builder(
