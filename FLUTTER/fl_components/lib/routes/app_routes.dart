@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class AppRoutes {
   static const initialRoute = 'home';
 
-  static final menuOption = <MenuOption>[
+  static final menuOptions = <MenuOption>[
     MenuOption(
         route: 'home',
         name: 'Home Screen',
@@ -33,13 +33,15 @@ class AppRoutes {
         icon: Icons.credit_card),
   ];
 
-  static Map<String, Widget Function(BuildContext)> routes = {
-    'home': (BuildContext context) => HomeScreen(),
-    'listview': (BuildContext context) => Listview1Screen(),
-    'listview2': (BuildContext context) => Listview2Screen(),
-    'alert': (BuildContext context) => AlertScreen(),
-    'card': (BuildContext context) => CardScreen(),
-  };
+  static Map<String, Widget Function(BuildContext)> getAppRoutes() {
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
+    for (final option in menuOptions) {
+      appRoutes.addAll({option.route: (BuildContext contex) => option.screen});
+    }
+
+    return appRoutes;
+  }
+
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
       builder: (context) => const AlertScreen(),

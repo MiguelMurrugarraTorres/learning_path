@@ -20,8 +20,6 @@ class Listview2Screen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Listview2Screen'),
           centerTitle: true,
-          elevation: 0,
-          backgroundColor: Colors.indigo,
         ),
         body: ListView.separated(
             itemCount: options.length,
