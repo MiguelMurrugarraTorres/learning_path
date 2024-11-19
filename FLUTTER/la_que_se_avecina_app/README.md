@@ -1,16 +1,26 @@
-# la_que_se_avecina_app
+# La Que Se Avecina App
 
-A new Flutter project.
+![image](https://github.com/user-attachments/assets/10530037-8291-4ab6-865c-9f7468fb172b)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Descripción
 
-A few resources to get you started if this is your first Flutter project:
+La Que Se Avecina App es una aplicación desarrollada en Flutter que permite a los usuarios explorar y visualizar episodios de la famosa serie de televisión "La Que Se Avecina". La aplicación ofrece una experiencia de usuario moderna, con navegación intuitiva y opciones para seleccionar temporadas y episodios.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Características
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Visualización de episodios por temporada.
+- Navegación intuitiva entre capítulos.
+- Botones interactivos de reproducción.
+- Selección de temporadas mediante un menú desplegable.
+- Interfaz de usuario moderna y optimizada.
+
+## Capturas de pantalla
+
+![Vista de Episodios](path/to/your/episode-view-image.png)
+
+## Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/la_que_se_avecina_app.git
