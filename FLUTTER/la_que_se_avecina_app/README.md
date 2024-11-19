@@ -17,7 +17,8 @@ La Que Se Avecina App es una aplicación desarrollada en Flutter que permite a l
 
 ## Capturas de pantalla
 
-![Vista de Episodios](path/to/your/episode-view-image.png)
+![Uploading image.png…]()
+
 
 ## Instalación
 
